@@ -431,3 +431,12 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+
+.dropdown-menu {
+  max-width: 320px;
+}
+
+.dropdown-menu a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
