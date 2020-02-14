@@ -440,6 +440,11 @@ footer .copyright {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+figure p {
+  margin: 70px 0;
+}
+
 @media (max-width: 768px) {
  #mainNav {
  position: fixed;
