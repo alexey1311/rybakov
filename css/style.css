@@ -440,3 +440,8 @@ footer .copyright {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@media (max-width: 768px) {
+ #mainNav {
+ position: fixed;
+ }
+}
