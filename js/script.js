@@ -38,4 +38,18 @@
       });
   }
 
+  const figures = document.querySelectorAll('figure');
+  const wh = window.innerHeight;
+
+  window.addEventListener('scroll', () => {
+    [].forEach.call(figures, function(figure) {
+      const rect = figure.getBoundingClientRect();
+      if (rect.top < wh) {
+        console.log(rect);
+        const p = figure.querySelector('p');
+        p.style.transform = `translateY(${100 * (rect.top / wh)}px)`;
+      }
+    });
+  });
+
 })(jQuery); // End of use strict
